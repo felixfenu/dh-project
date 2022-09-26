@@ -23,6 +23,7 @@ a {
 h2{
     font-size: 24px;
     width: 100%;
+    margin: 10px;
 }
 main{
     width: 90%;
@@ -49,11 +50,21 @@ main section{
     background-color: #FFF;
     padding: 15px;
     width: 11em;
+    position: relative;
+   
 }
 
 section article{
-    margin: 10px 10px;
+    margin: 8px 8px;
     width: 11em;
+    position: relative;
+}
+.descripcion{
+    opacity: 0;
+}
+
+.descripcion:hover {
+    opacity: 1;
 }
 #ico-envio{
     color: var(--verde);
@@ -66,9 +77,13 @@ section article{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    /* position: absolute; */
+    position: absolute;
     right: 20px;
     top: -15px;
+}
+#ico-envio:hover{
+    transition: all 0.5s;
+    transform: rotate(-90deg);
 }
 .articulo div {
     display: flex;
@@ -80,7 +95,7 @@ section article{
     font-size: 12px;
 }
 
-.descripcion{
+.descuento{
     font-size: 16px;
     color: var(--verde);
     padding-left: 6px;
@@ -92,46 +107,11 @@ section article{
 .icono{
     width: 11em;
 }
-footer section i{
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: var(--celeste);
+section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-footer section {
-    text-align: center;
-}
-
 @media (max-width: 361px) { /* tablets */
     section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    #nav-bar{
-        display: none;
-    }
-    .barra img{
-        max-width: 48%;
-        margin: 2% 1%;
-    }
-    .barra p{
-        max-width: 48%;
-        margin: 2% 1%;
-    }
-
-}
-@media ((min-width: 362px) and (max-width: 2000px)) { /* desktop */
-
-    #ico-nav-menu{
-        display: none;
-     }
-     .barra img{
-        max-width: 160px;
-        min-width: 10%;
-    }
-    .barra p{
-        max-width: 36%;
-        margin: 2% 5%;
-    }
-    .barra div{
-        max-width: 20%;
     }
 }

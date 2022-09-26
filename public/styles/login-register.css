@@ -1,0 +1,71 @@
+#formulario{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#formulario form{
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    margin: 20px;
+    border-radius: 5px;
+}
+#formulario form input{
+    width: 97%;
+    margin: 5px 0px;
+    display: block;
+    padding: 4px;
+}
+#formulario form label{
+    width: 50%;
+    padding: 10px 0px;
+}
+#formulario form div input{
+    width: 20px;
+    display: inline;
+}
+#btn-registrarse{
+    display: inline-block;
+    margin: 10px 30px;
+    width: 95px;
+    padding: 8px 10px;
+    background-color:var(--celeste);
+    border: 1px solid var(--celeste);
+    border-radius: 3px;
+    color: #FFF;
+}
+#btn-login{
+    display: inline-block;
+    margin: 10px 30px;
+    width: 95px;
+    padding: 8px 10px;
+    background-color:var(--celeste);
+    border: 1px solid var(--celeste);
+    border-radius: 3px;
+    color: #FFF;
+}
+#btn-login:hover{
+    background-color: #0022AA;
+}
+
+#botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 361px) {
+    #formulario form{
+        width: 95%;
+        padding: 5px;
+    }
+    #btn-registrarse{
+        width: 100px;
+        margin: 10px 10px;
+    }
+    #formulario form input{
+        width: 95%;
+    }
+}

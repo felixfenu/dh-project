@@ -13,7 +13,11 @@
             <div class="barra">
                 <img src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
 
-                    <p> espacio para busqueda</p>    
+                <form action="buscar" method="post" id="form-nav" style="display: flex;">
+                    <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
+                    <button id ="btn-busqueda" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                </form>   
 
                 <div><i class="fa-solid fa-credit-card"></i> Compra en cuotas y sin tarjeta de crédito</div>
             </div>
@@ -21,7 +25,7 @@
 
                 <nav id="nav-bar">
                 <ul>
-                    <li><a href="">Ofertas </a></li>
+                    <li><a href="/home#ofertas">Ofertas </a></li>
                     <li><a href="">Tiendas oficiales </a></li>
                     <li><a href="">Vender </a></li>
                     <li><a href=""> Ayudar</a></li>
@@ -37,18 +41,19 @@
             </div>
         </header>
         <main>
+            <img src="/images/img-home-banner.jpg" alt="banner" style="width: 100%;">
             <section>
-                <h2>Basado en tu ultima vista</h2>
+                <h2 id="ultima-vista">Basado en tu ultima vista</h2>
                 <article>
                     <img src="images/img-cafetera-moulinex.jpg"alt="cafetera moulinex" class="icono">
                     <div class="articulo">
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div>
                             <p class="precio">$ 6770</p>
-                            <p class="descripcion"> $40% OFF</p>
+                            <p class="descuento"> $40% OFF</p>
                         </div>
 
-                        <p> Cafetera Moulinex</p>
+                        <p class="descripcion"> Cafetera Moulinex</p>
                     </div>
                 </article>
 
@@ -58,10 +63,10 @@
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div> 
                             <p class="precio">$ 230000</p>
-                            <p class="descripcion">20% OFF</p>
+                            <p class="descuento">20% OFF</p>
                         </div>
 
-                        <p>MacBook Pro 2019</p>
+                        <p class="descripcion">MacBook Pro 2019</p>
                     </div>
                 </article>
 
@@ -71,9 +76,9 @@
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div>
                             <p class="precio">$ 70500</p>
-                            <p class="descripcion">10% OFF</p>
+                            <p class="descuento">10% OFF</p>
                         </div>
-                        <p>Samsung Galaxy S10</p>
+                        <p class="descripcion">Samsung Galaxy S10</p>
                     </div>
                 </article>
 
@@ -83,25 +88,25 @@
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div>
                             <p class="precio">$ 23200</p>
-                            <p class="descripcion">5% OFF</p>
+                            <p class="descuento">5% OFF</p>
                         </div>
-                        <p>SmartTv Samsung 43"</p>
+                        <p class="descripcion">SmartTv Samsung 43"</p>
                     </div>
                 </article>
             </section> <!-- FIN SECCION 1 -->
 
            
             <section>
-                <h2>Ofertas</h2>
+                <h2 id="ofertas">Ofertas</h2>
                 <article>
                     <img src="images/img-cafetera-moulinex.jpg"alt="cafetera moulinex" class="icono">
                     <div class="articulo"> 
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div>
                             <p class="precio">$ 6770</p>
-                            <p class="descripcion"> $40% OFF</p>
+                            <p class="descuento"> $40% OFF</p>
                         </div>
-                        <p> Cafetera Moulinex</p>
+                        <p class="descripcion"> Cafetera Moulinex</p>
                     </div>
                 </article>
 
@@ -111,21 +116,21 @@
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div>
                             <p class="precio">$ 230000</p>
-                            <p class="descripcion">20% OFF</p>
+                            <p class="descuento">20% OFF</p>
                         </div>
-                        <p>MacBook Pro 2019</p>
+                        <p class="descripcion">MacBook Pro 2019</p>
                     </div>
                 </article>
 
                 <article>
                     <img src="images/img-samsung-galaxy-s10.jpg" alt="samsung galaxy" class="icono">
-                    <div class="articulo"> 
+                    <div class="articulo" > 
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div>
                             <p class="precio">$ 70500</p>
-                            <p class="descripcion">10% OFF</p>
+                            <p class="descuento">10% OFF</p>
                         </div>
-                        <p>Samsung Galaxy S10</p>
+                        <p class="descripcion">Samsung Galaxy S10</p>
                     </div>
                 </article>
 
@@ -135,37 +140,38 @@
                         <i id="ico-envio" class="fa-solid fa-truck"></i>
                         <div>
                             <p class="precio">$ 23200</p>
-                            <p class="descripcion">5% OFF</p>
+                            <p class="descuento">5% OFF</p>
                         </div>
-                        <p>SmartTv Samsung 43"</p>
+                        <p class="descripcion">SmartTv Samsung 43"</p>
                     </div>
                 </article>
             </section>
         </main>
-
         <footer>
-            <section>
-                <i class="fa-solid fa-credit-card"></i>
-                <h3> Paga con tarjeta o en efectivo</h3>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                    puntos de pago. ¡Y siempre es seguro!
-                </p>
-            </section>
-            <section>
-                <i class="fa-solid fa-gift"></i>
-                <h3>Envío gratis desde $ 2.500</h3>
-                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                    productos. Es un beneficio de Mercado Puntos.
-                </p>
-            </section>
-            <section>
-                <i class="fa-solid fa-user-shield"></i>
-                <h3> Seguridad, de principio a fin </h3>
-                <p> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.</p>
-            </section>
+            <div>
+                <section>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3> Paga con tarjeta o en efectivo</h3>
+                    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!
+                    </p>
+                </section>
+                <section>
+                    <i class="fa-solid fa-gift"></i>
+                    <h3>Envío gratis desde $ 2.500</h3>
+                    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.
+                    </p>
+                </section>
+                <section>
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3> Seguridad, de principio a fin </h3>
+                    <p> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.</p>
+                </section>
+            </div>
+            
             <section>Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
-
         </footer>
     </body>
 </html>

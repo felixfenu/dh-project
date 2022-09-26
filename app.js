@@ -13,6 +13,6 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname,"/views/login.html"))
 });
-app.listen(3000,()=>{
-    console.log("Server Up & Running");
-});
+app.listen(process.env.PORT || 3000, function() {
+    console.log("Servidor corriendo");
+})

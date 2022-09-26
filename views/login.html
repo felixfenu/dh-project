@@ -22,8 +22,6 @@
 
                 <div><i class="fa-solid fa-credit-card"></i> Compra en cuotas y sin tarjeta de crédito</div>
             </div>
-                
-
                 <nav id="nav-bar">
                 <ul>
                     <li><a href="/home#ofertas">Ofertas </a></li>
@@ -41,51 +39,17 @@
                 <i id="ico-nav-menu" class="fas fa-bars"></i>
             </div>
         </header>
-        <main>          
+        <main>
             <section id="formulario">
-                <form action="/home" method="get">
-                    <h2> Creá tu cuenta <i class="fa-regular fa-id-card"></i> </h2>
+                <form action="login" method="post">
+                    <h2 style="text-align:center;"> Ingresar <i class="fa-solid fa-right-to-bracket"></i></h2>
                     <br>
-                    <label for="nombre">Nombre</label><br>
-                    <input type="text" name="nombre" id="nombre"minlength="3" required><br>
+                    <label for="nombre">Nombre de usuario</label><br>
+                    <input type="text" name="nombre" id="nombre"minlength="3" required style="width: 100%;"><br>
 
-                    <label for="usuario">Usuario</label><br>
-                    <input type="text" name="usuario" id="usuario" minlength="5" required><br>
-
-                    <label for="nacimiento">Nacimiento</label><br>
-                    <input type="date" name="nacimiento" id="nacimiento" required><br>
-
-                    <label for="domicilio">Domicilio</label><br>
-                    <input type="text" name="domicilio" id="domicilio" minlength="8" required><br>
-                    <br>
-                    <div>
-                        <label for="perfil">Perfil del usuario</label><br>
-                        <input type="radio" name="perfil" id="comprador" value="Comprador" checked> <label>Comprador</label><br>
-                        <input type="radio" name="perfil" id="vendedor" value="Vendedor"> <label>Vendedor</label><br>
-                        <br>
-                        <br>
-                    </div>
-
-                    <div>
-                        <label for="intereses"> Intereses </label><br>
-                        <input type="checkbox" name="intereses" id="electro"> <label>Electro</label><br>
-                        <input type="checkbox" name="intereses" id="moda"> <label>Moda</label><br>
-                        <input type="checkbox" name="intereses" id="hogar"> <label>Hogar</label><br>
-                        <input type="checkbox" name="intereses" id="jugueteria"> <label>Juegueteria</label><br>
-                        <input type="checkbox" name="intereses" id="vida-sana"> <label>Vida Sana</label><br>
-                        <br>
-                    </div>
-                    <label for="perfil">Foto</label>
-                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><br>
                     <label for="perfil">Contraseña</label><br>
-                    <input type="password" id="pass" name="password" minlength="8" required>
-                    <label for="perfil">Confirmar contraseña</label><br>
-                    <input type="password" id="confirm-pass" name="confirm-password" minlength="8" required>
-
-                    <div id="botones">
-                        <button id ="btn-registrarse" type="reset">Borrar</button>
-                        <button id ="btn-registrarse" type="submit">Registrarse</button>
-                    </div>
+                    <input type="password" id="pass" name="password" minlength="8" required style="width: 100%;">
+                    <button id ="btn-login" type="submit" style="width:100%;margin: 20px 0px;">Ingresar</button>
 
                 </form>
             </section>
@@ -116,6 +80,5 @@
             
             <section>Copyright © 1999-2020 MercadoLiebre S.R.L.</section>
         </footer>
-
-    
     </body>
+</html>
