@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Mercado Liebre</title>
+        <link rel="stylesheet" type="text/css" href="/styles/header-nav.css" />
+        <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+        <script src="https://kit.fontawesome.com/6d24a5dd74.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="barra">
+                <img src="/images/logo-mercado-liebre.svg" alt="logo mercado liebre">
+
+                    <p> espacio para busqueda</p>    
+
+                <div><i class="fa-solid fa-credit-card"></i> Compra en cuotas y sin tarjeta de crédito</div>
+            </div>
+                
+
+                <nav id="nav-bar">
+                <ul>
+                    <li><a href="">Ofertas </a></li>
+                    <li><a href="">Tiendas oficiales </a></li>
+                    <li><a href="">Vender </a></li>
+                    <li><a href=""> Ayudar</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresa <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <i id="ico-nav-menu" class="fas fa-bars"></i>
+            </div>
+        </header>
+        <main>
+            <form action="/register" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario">
+
+                <label for="nacimiento">Nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+                <br>
+
+                <label for="perfil"></label>
+                <input type="radio" name="perfil" id="perfil" value="Comprador" checked>
+                <input type="radio" name="perfil" id="perfil" value="Vendedor">
+                <input type="radio" id="soup" name="meal" value="soup" checked>
+
+            </form>
+        </main>
+
+    
+    </body>
